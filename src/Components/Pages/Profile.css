@@ -1,0 +1,219 @@
+@import url('https://fonts.googleapis.com/css2?family=Ubuntu:ital,wght@0,300;0,400;0,500;0,700;1,300;1,400;1,500;1,700&display=swap');
+
+
+:root{
+    --black: black;
+    --white: white;
+    --dark-blue: #282a3c;
+    --bg-color: #171b22;
+    --tint-blue: #61dafb;
+    --white-smoke: whitesmoke;
+}
+*{
+    margin: 0;
+    padding: 0; 
+    box-sizing: border-box;
+    font-family: 'Ubuntu', sans-serif;
+}
+
+.Profile {
+    top: 0;
+    left: 0;
+    padding: 3px;
+    width: 100%;
+    height: 100vh;
+    background-color: var(--bg-color);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.components{
+    height: 90%;
+    width: 90%;
+    padding: 1rem;
+    display: flex;
+    flex-direction: row-reverse;
+    justify-content: space-evenly;
+    align-items: center;
+}
+
+.components .pic {
+    height: 450px;
+    width: 450px;
+    border-radius: 50%;
+    box-shadow: 0 4px 8px var(--tint-blue);
+    background: transparent;
+}
+
+.components .text-sec{
+    height: 450px;
+    width: 500px;
+    display: flex;
+    margin-left: 3rem;
+    gap: 7px;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+.text-sec .name{
+    font-size: 2rem;
+}
+
+.text-sec .hello{
+    font-size: 1.5rem;
+    color: var(--white-smoke);
+    margin-bottom: 6px;
+}
+
+.text-sec .front{
+    font-size: 1.5rem;
+    color: var(--white-smoke);
+}
+
+.buttons-sec{
+    margin-top: 8px;
+    height: 40px;
+    width: 100%;
+    gap: 2rem;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.buttons-sec .dl-cv{
+    border: none;
+    border-radius: 20px;
+    border-width: 2px;
+    border-style: solid; 
+    border-color: var(--tint-blue);
+    height: 2.5rem;
+    width: 9rem;
+    background-color: var(--bg-color);
+    text-align: center;
+    text-decoration: none;
+    font-size: 1rem;
+    color: var(--tint-blue);
+    display: inline-block;
+    cursor: pointer;
+    transition: .3s ease-in-out;
+}
+
+.dl-cv:hover{
+    background-color: var(--tint-blue);
+    color: var(--bg-color);
+    border-color: var(--black);
+}
+
+.buttons-sec .contact-info{
+    border: none;
+    border-radius: 20px;
+    border-width: 2px;
+    border-style: solid;
+    border-color: var(--tint-blue);
+    height: 2.5rem;
+    width: 9rem;
+    background-color: var(--tint-blue);
+    text-align: center;
+    text-decoration: none;
+    font-size: 1rem;
+    color: var(--dark-blue);
+    display: inline-block;
+    cursor: pointer;
+}
+
+.git-sec .git-img{
+    height: 2rem;
+    width: 2rem;
+    color: var(--tint-blue);
+    cursor: pointer;
+    margin-top: 4px;
+    display: inline-block;
+    transition: transform 0.3s ease-in-out;
+}
+
+.git-sec .git-img:hover{
+    transform: scale(1.2);
+}
+
+
+/* BREAK POINTS */
+
+@media (max-width: 1200px){
+    .Profile {
+        padding: 0;
+    }
+    .components{
+        padding: 0;
+    }
+
+    .components .pic {
+        height: 400px;
+        width: 400px;
+    }
+}
+
+@media (max-width: 1120px){
+    .components .text-sec{
+        margin-left: 0;
+        align-items: flex-start;
+    }
+}
+
+@media (max-width: 1000px){
+    .components{
+        flex-direction: column;
+        justify-content: flex-start;
+        align-items: center;
+    }
+    .components .text-sec{
+        position: relative;
+        align-items: center;
+    }
+}
+
+@media (max-width: 600px){
+    .components .pic {
+        height: 350px;
+        width: 350px;
+    }
+    .text-sec .hello{
+        font-size: 1.2rem;
+    }
+    .text-sec .name{
+        font-size: 1.5rem;
+    }
+    .text-sec .front{
+        font-size: 1.2rem;
+    }
+
+    .buttons-sec{
+        gap: .5rem;
+    }
+    .git-sec .git-img{
+        height: 1.5rem;
+        width: 1.5rem;
+    }
+    .buttons-sec .dl-cv{
+        height: 2rem;
+        width: 7rem;
+        font-size: .7rem;
+    }
+}
+
+@media (max-width: 400px){
+    .components .pic {
+        height: 250px;
+        width: 250px;
+    }
+    .text-sec .hello{
+        font-size: 14px;
+    }
+    .text-sec .name{
+        font-size: 1rem;
+    }
+    .text-sec .front{
+        font-size: 14px;
+    }
+}
