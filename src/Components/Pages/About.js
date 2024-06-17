@@ -16,10 +16,11 @@ const About = () => {
 
         <div className="about-sec">
           
-          <div className="">
-            <div className="">
-              <GiAchievement className="exp" />
-              <h3 className="">Experience</h3>
+          <div className="exp-edu">
+
+            <div className="item">
+              <GiAchievement className="icon" />
+              <h3 className="">Achieved</h3>
               <p className="">5 months Self-study</p>
               <ul>
                 <li>Front-end Development</li>
@@ -27,8 +28,8 @@ const About = () => {
               </ul>
             </div>
 
-            <div className="">
-              <FaGraduationCap className="grad" />
+            <div className="item">
+              <FaGraduationCap className="icon" />
               <h3 className="">Education</h3>
               <p className="">
                 Bachelors Degree
@@ -38,6 +39,7 @@ const About = () => {
             </div>
 
           </div>
+          
           <div className="seeking-sec">
             <p className="">
               Seeking a challenging position where I can leverage my skills to
