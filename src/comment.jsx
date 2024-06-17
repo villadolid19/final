@@ -1,6 +1,6 @@
 
 
-// Siding Profile
+// Link React-Router
 
 // import React, { useState } from "react";
 // import "./Navbar.css";
@@ -152,7 +152,7 @@
 
 
 
-// Link Profile
+//Link React-Scroll
 // ____________________________________________________
 // import React, { useState } from "react";
 // import "./Navbar.css";
