@@ -22,9 +22,8 @@ const Navbar = () => {
         onClick={closeMenu}
         spy={true}
         smooth={true}
-        offset={-40}
+        offset={-55}
         duration={600}
-        activeClass="active"
       >
         DenzeL
       </Link>
@@ -39,7 +38,7 @@ const Navbar = () => {
           onClick={closeMenu}
           spy={true}
           smooth={true}
-          offset={-40}
+          offset={-55}
           duration={600}
           activeClass="active"
         >
@@ -51,7 +50,7 @@ const Navbar = () => {
           onClick={closeMenu}
           spy={true}
           smooth={true}
-          offset={-40}
+          offset={-55}
           duration={600}
           activeClass="active"
         >
@@ -63,7 +62,7 @@ const Navbar = () => {
           onClick={closeMenu}
           spy={true}
           smooth={true}
-          offset={-40}
+          offset={-55}
           duration={600}
           activeClass="active"
         >
@@ -75,7 +74,7 @@ const Navbar = () => {
           onClick={closeMenu}
           spy={true}
           smooth={true}
-          offset={-40}
+          offset={-55}
           duration={600}
           activeClass="active"
         >
@@ -87,7 +86,7 @@ const Navbar = () => {
           onClick={closeMenu}
           spy={true}
           smooth={true}
-          offset={-40}
+          offset={-55}
           duration={600}
           activeClass="active"
         >

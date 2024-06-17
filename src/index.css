@@ -26,10 +26,16 @@ html::-webkit-scrollbar {
    
 }
 
-.contents{
-    margin-top: 3.35rem;
+body{
+    background-color: var(--bg-color);
 }
 
-:target{
+.contents{
+    height: 100%;
+    width: 100%;
+    margin-top: 3.45rem;
+}
+
+.main:target{
     scroll-margin-top: 3.45rem;
 }
