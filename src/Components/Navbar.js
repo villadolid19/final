@@ -1,7 +1,7 @@
 import React, { useState } from "react";
 import "./Navbar.css";
 import { LiaTimesSolid } from "react-icons/lia";
-import { NavLink } from "react-router-dom";
+import { Link } from "react-scroll";
 
 const Navbar = () => {
   const [isMenuOpen, setIsMenuOpen] = useState(false);
@@ -16,49 +16,81 @@ const Navbar = () => {
 
   return (
     <nav className="nav-content">
-      <NavLink to="/Profile" className="logo">
+      <Link
+        to="Profile"
+        className="logo"
+        onClick={closeMenu}
+        spy={true}
+        smooth={true}
+        offset={-45}
+        duration={600}
+      >
         DenzeL
-      </NavLink>
+      </Link>
 
       <div
         className={`items ${isMenuOpen ? "show" : "hide"}`}
         onClick={closeMenu}
       >
-        <NavLink
-          to="/Profile"
-          className={({ isActive }) => (isActive ? "a active" : "a")}
+        <Link
+          to="Profile"
+          className="a"
           onClick={closeMenu}
+          spy={true}
+          smooth={true}
+          offset={-60}
+          duration={600}
         >
           Profile
-        </NavLink>
-        <NavLink
-          to="/About"
-          className={({ isActive }) => (isActive ? "a active" : "a")}
+        </Link>
+        <Link
+          to="About"
+          className="a"
           onClick={closeMenu}
+          spy={true}
+          smooth={true}
+          offset={-60}
+          duration={600}
+          activeClass="active"
         >
           About
-        </NavLink>
-        <NavLink
-          to="/Experience"
-          className={({ isActive }) => (isActive ? "a active" : "a")}
+        </Link>
+        <Link
+          to="Experience"
+          className="a"
           onClick={closeMenu}
+          spy={true}
+          smooth={true}
+          offset={-45}
+          duration={600}
+          activeClass="active"
         >
           Experience
-        </NavLink>
-        <NavLink
-          to="/Projects"
-          className={({ isActive }) => (isActive ? "a active" : "a")}
+        </Link>
+        <Link
+          to="Projects"
+          className="a"
           onClick={closeMenu}
+          spy={true}
+          smooth={true}
+          offset={-45}
+          duration={600}
+          activeClass="active"
         >
           Projects
-        </NavLink>
-        <NavLink
-          to="/Contact"
-          className={({ isActive }) => (isActive ? "a active" : "a")}
+        </Link>
+        <Link
+          to="Contact"
+          className="a"
           onClick={closeMenu}
+          spy={true}
+          smooth={true}
+          offset={-45}
+          duration={600}
+          activeClass="active"
         >
           Contact
-        </NavLink>
+        </Link>
       </div>
 
       <div className="buttons">
