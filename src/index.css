@@ -20,17 +20,29 @@ html::-webkit-scrollbar {
     padding: 0;
     box-sizing: border-box;
 }
-.main{
-    background-color: var(--bg-color);
-    overflow: hidden;
-   
-}
-
 body{
     background-color: var(--bg-color);
 }
 
+
+.main{
+    top: 0;
+    left: 0;
+    height: auto;
+    width: 100%;
+    background-color: var(--bg-color);
+    overflow: hidden;
+}
+.navbar{
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    z-index: 2;
+}
+
 .contents{
+    position: relative;
     height: 100%;
     width: 100%;
     margin-top: 3.45rem;
