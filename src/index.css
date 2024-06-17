@@ -29,3 +29,7 @@ html::-webkit-scrollbar {
 .contents{
     margin-top: 3.35rem;
 }
+
+:target{
+    scroll-margin-top: 3.45rem;
+}
