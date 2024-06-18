@@ -17,11 +17,30 @@
 }
 
 .Experience {
+    top: 0;
+    left: 0;
+    display: flex;
+    justify-content: center;
+    align-items: center;
     width: 100%;
     height: 100vh;
     background-color: var(--bg-color);
 }
 
-h1{
-    color: var(--tint-blue);
+.exp-sec{
+    height: 100%;
+    width: 90%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 2rem;
+}
+
+.exp-sec .component{
+    height: 330px;
+    width: 400px;
+    border-style: solid;
+    border-radius: 40px;
+    border-color: var(--tint-blue);
+    background-color: var(--dark-blue);
 }

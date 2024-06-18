@@ -15,15 +15,16 @@ const About = () => {
         <img src={Pic1} className="img" alt="Profile" />
 
         <div className="about-sec">
-          
           <div className="exp-edu">
-
             <div className="item">
               <GiAchievement className="icon" />
               <h3 className="">Achieved</h3>
               <p className="">5 months Self-study</p>
               <ul>
                 <li>Front-end Development</li>
+              </ul>
+              <p className="">2 months Self-study</p>
+              <ul>
                 <li>Back-end Development</li>
               </ul>
             </div>
@@ -37,9 +38,8 @@ const About = () => {
                 Bachelor of Science in Computer Science
               </p>
             </div>
-
           </div>
-          
+
           <div className="seeking-sec">
             <p className="">
               Seeking a challenging position where I can leverage my skills to
