@@ -37,10 +37,69 @@
 }
 
 .exp-sec .component{
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-start;
+    align-items: flex-start;
+    padding: 1.3rem;
     height: 330px;
     width: 400px;
     border-style: solid;
     border-radius: 40px;
     border-color: var(--tint-blue);
     background-color: var(--dark-blue);
+}
+.component h1{
+    font-size: 1rem;
+}
+
+.component .icon-text{
+    margin-top: 1rem;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 2.5rem;
+    width: auto;
+}
+
+.icon-text {
+    gap: 1rem;
+}
+.icon-text .icon .html{
+    font-size: 1.3rem;
+    color: red;
+}
+
+.icon-text .icon .css{
+    font-size: 1.3rem;
+    color: var(--tint-blue);
+}
+.icon-text .icon .tcss{
+    font-size: 1.3rem;
+    color: var(--tint-blue);
+}
+.icon-text .icon .js{
+    font-size: 1.3rem;
+    color: yellow;
+}
+
+.icon-text .icon .react{
+    font-size: 1.3rem;
+    color:blue;
+}
+.icon-text .icon .php{
+    font-size: 1.5rem;
+    color: violet;
+}
+.icon-text .icon .sql{
+    font-size: 1.5rem;
+    color: var(--tint-blue);
+}
+.icon-text .icon .db{
+    font-size: 1.5rem;
+    color: var(--tint-blue);
+}
+.icon-text .text{
+    margin-top: .3rem;
+    color: var(--white-smoke);
 }
