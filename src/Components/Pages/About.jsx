@@ -5,11 +5,27 @@ import Pic1 from "../Assets/Don.jpg";
 import { GiAchievement } from "react-icons/gi";
 import { FaGraduationCap } from "react-icons/fa";
 
+import ScrollReveal from "scrollreveal";
+
+
 const About = () => {
+
+   ScrollReveal({
+     reset: true,
+     distance: "80px",
+     duration: 2000,
+     delay: 200,
+   });
+
+   ScrollReveal().reveal(".img", { origin: "top" });
+   ScrollReveal().reveal(".about-sec", { origin: "bottom" });
+
   return (
     <section className="About" id="About">
-      <p className="">Get To Know More</p>
-      <h1 className="">About Me</h1>
+      <div className="greetings">
+        <p className="">Get To Know More</p>
+        <h1 className="">About Me</h1>
+      </div>
 
       <div className="content">
         <img src={Pic1} className="img" alt="Profile" />

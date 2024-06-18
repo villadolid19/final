@@ -67,16 +67,11 @@
     transition: transform 0.3s ease-in-out;
 }
 
-.items .a:hover {
+.items .a:hover, .items .a.active {
     transform: scale(1.2);
     color: var(--tint-blue);
     cursor: pointer;
-}
-.items .a.active{
-    transform: scale(1.2);
-    color: var(--tint-blue);
-    text-decoration: underline;
-    cursor: pointer;
+    text-decoration: none;
 }
 
 /* Menu toggle */
@@ -155,7 +150,6 @@
     .items .a.active{
         transform: scale(1.2);
         color: var(--tint-blue);
-        text-decoration: underline;
         cursor: pointer;
     }
 }
