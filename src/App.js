@@ -17,6 +17,8 @@ import Projects from "./Components/Pages/Projects";
 import Contact from "./Components/Pages/Contact";
 import Footer from "./Components/Footer";
 
+import ScrollReveal from "scrollreveal";
+
 function App() {
   let ref = useRef(null);
   let { scrollYProgress } = useScroll({
@@ -24,6 +26,13 @@ function App() {
     offset: ["start start", "end start"],
   });
   let y = useTransform(scrollYProgress, [0, 1], ["0%", "50%"]);
+
+  ScrollReveal({
+    reset: true,
+    distance: "80px",
+    duration: 2000,
+    delay: 200,
+  });
 
   return (
     <Router>
