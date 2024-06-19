@@ -58,7 +58,7 @@
     width: 440px;
 }
 .img-sec .pic {
-    margin-top: 3rem;
+    margin-top: 1rem;
     height: 450px;
     width: 450px;
     border-radius: 50%;
@@ -84,7 +84,7 @@
     height: 1.5rem;
     width: 250px;
     border-radius: 60%;
-    box-shadow: 4px 5px 10px 10px var(--tint-blue);
+    box-shadow: 0 4px 10px 3px var(--tint-blue);
     background-color: var(--dark-blue);
     backdrop-filter: blur(20px);
     animation: shadow 5s ease-in-out infinite;
@@ -93,13 +93,13 @@
 
 @keyframes shadow{
     0%{
-        box-shadow: 2px 4px 13px 12px var(--tint-blue);
+        box-shadow: 0 4px 13px 12px var(--tint-blue);
     }
     50%{
-        box-shadow: 1px 2px 10px 4px var(--tint-blue);
+        box-shadow: 0 1px 10px 3px var(--tint-blue);
     }
     100%{
-        box-shadow: 2px 4px 13px 12px var(--tint-blue);
+        box-shadow: 0 4px 13px 12px var(--tint-blue);
     }
 }
 

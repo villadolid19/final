@@ -323,3 +323,15 @@
 // }
 
 // export default App;
+
+
+
+
+
+
+
+
+
+
+
+// Type.js GitHub link https://github.com/mattboldt/typed.js

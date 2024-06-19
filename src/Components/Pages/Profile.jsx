@@ -1,10 +1,11 @@
-import React from 'react';
+import React, {useRef} from 'react';
 import './Profile.css';
 
 import Pic1 from "../Assets/Don1.jpg";
 import { FaGithub } from "react-icons/fa6";
 import Resume from "../Assets/Villadolid-Resume CV.pdf";
 import ScrollReveal from "scrollreveal";
+import Type from "typed.js";
 // import { Link } from "react-scroll";
 
 const Profile = () => {
@@ -17,6 +18,7 @@ const Profile = () => {
     window.open("https://github.com/", "_blank");
   };
 
+  // Scroll Reveal
   ScrollReveal({
     reset: true,
     distance: "80px",
@@ -26,6 +28,25 @@ const Profile = () => {
 
   ScrollReveal().reveal(".img-sec", { origin: "top" });
   ScrollReveal().reveal(".text-sec", { origin: "bottom" });
+
+  // Type.js
+  const el = React.useRef(null);
+  
+  React.useEffect(() => {
+    const typed = new Type(el.current, {
+      strings: ["A Front-end Developer"],
+      typeSpeed: 100,
+      backSpeed: 100,
+      backDelay: 1000,
+      loop: true,
+    });
+
+    return () => {
+      // Destroy Typed instance during cleanup to stop animation
+      typed.destroy();
+    };
+  }, []);
+  
 
   return (
     <section className="Profile" id="Profile">
@@ -43,7 +64,7 @@ const Profile = () => {
             Denzel Dax Darryl C. Villadolid
           </h1>
           <p className="front" id="front">
-            A Front-end Developer
+            <span ref={el}></span>
           </p>
 
           <div className="buttons-sec">
@@ -57,9 +78,6 @@ const Profile = () => {
           </div>
         </div>
       </div>
-
-      {/* <script src="https://unpkg.com/scrollreveal"></script>
-      <script></script> */}
     </section>
   );
 }
