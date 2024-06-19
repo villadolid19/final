@@ -119,7 +119,27 @@ const Experience = () => {
       </div>
 
       <div className="tech-skills">
-        <h1>Technical Skills</h1>
+        <div className="skills">
+          <div className="div-sec">
+            <h1>Other Related Skills:</h1>
+            <ul>
+              <li>Objective Oriented Programming (OOP)</li>
+              <li>Structured Query Language (SQL)</li>
+              <li>C Language</li>
+              <li>Git</li>
+            </ul>
+          </div>
+
+          <div className="div-sec">
+            <h1>Microsoft Office:</h1>
+            <ul>
+              <li>Word</li>
+              <li>PowerPoint</li>
+              <li>Excel</li>
+            </ul>
+          </div>
+          
+        </div>
       </div>
     </section>
   );

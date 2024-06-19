@@ -62,8 +62,7 @@ const About = () => {
               develop innovative software solutions and contribute to the growth
               and success of the organization. I studied both frontend and
               backend development during my last year as a student. Currently, I
-              code as a hobby while eagerly awaiting an opportunity for
-              employment.
+              code as a hobby while eagerly waiting for a job opportunity.
             </p>
           </div>
         </div>

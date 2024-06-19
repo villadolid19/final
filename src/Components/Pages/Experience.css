@@ -23,12 +23,15 @@
     display: flex;
     justify-content: flex-start;
     align-items: center;
-    text-align: center;
     padding-top: 6rem;
     gap: 1rem;
     width: 100%;
-    height: 100vh;
+    height: auto;
     background-color: var(--bg-color);
+}
+
+.greetings{
+    text-align: center;
 }
 
 .greetings p{
@@ -47,7 +50,6 @@
     justify-content: center;
     align-items: center;
     gap: 2rem;
-    background-color: antiquewhite;
 }
 
 .exp-sec .component{
@@ -74,12 +76,6 @@
     align-items: center;
     height: 2.5rem;
     width: auto;
-}
-
-.tech-skills{
-    height: 600px;
-    width: 90%;
-    background-color: aquamarine;
 }
 
 .icon-text {
@@ -122,4 +118,107 @@
 .icon-text .text{
     margin-top: .3rem;
     color: var(--white-smoke);
+}
+
+.tech-skills{
+    height: 600px;
+    width: 90%;
+    margin-top: 1rem;
+}
+
+
+.tech-skills .skills{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 2rem;
+}
+
+.skills .div-sec{
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-start;
+    align-items: flex-start;
+    height: 200px;
+    width: 400px;
+    padding: 1.8rem;
+    background-color: var(--dark-blue);
+    border-radius: 60px 30px;
+    border: solid;
+    border-color: var(--tint-blue);
+}
+
+.skills .div-sec h1{
+    display: inline-block;
+    font-size: 1.2rem;
+    font-weight: 500;
+    margin-bottom: 1rem;
+}
+
+.skills .div-sec ul li{
+    color: var(--white-smoke);
+    margin-top: 2px;
+}
+
+/* BREAK POINTS */
+
+@media(max-width: 1000px){
+    .exp-sec, .tech-skills .skills{
+        flex-direction: column;
+    }
+    .exp-sec .component, .skills .div-sec{
+        height: auto;
+    }
+}
+
+@media(max-width: 480px){
+    .exp-sec .component, .skills .div-sec{
+        width: 300px;
+    }
+
+    .icon-text .icon .html{
+        font-size: 1rem;
+        color: red;
+    }
+
+    .icon-text .icon .css{
+        font-size: 1rem;
+        color: var(--tint-blue);
+    }
+    .icon-text .icon .tcss{
+        font-size: 1rem;
+        color: var(--tint-blue);
+    }
+    .icon-text .icon .js{
+        font-size: 1rem;
+        color: yellow;
+    }
+
+    .icon-text .icon .react{
+        font-size: 1rem;
+        color:blue;
+    }
+    .icon-text .icon .php{
+        font-size: 1rem;
+        color: violet;
+    }
+    .icon-text .icon .sql{
+        font-size: 1rem;
+        color: var(--tint-blue);
+    }
+    .icon-text .icon .db{
+        font-size: 1rem;
+        color: var(--tint-blue);
+    }
+    .icon-text .text{
+        margin-top: .3rem;
+        font-size: 14px;
+        color: var(--white-smoke);
+    }
+}
+
+@media(max-width: 350px){
+    .exp-sec .component, .skills .div-sec{
+        width: 250px;
+    }
 }
