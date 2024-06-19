@@ -19,21 +19,35 @@
 .Experience {
     top: 0;
     left: 0;
+    flex-direction: column;
     display: flex;
-    justify-content: center;
+    justify-content: flex-start;
     align-items: center;
+    text-align: center;
+    padding-top: 6rem;
+    gap: 1rem;
     width: 100%;
     height: 100vh;
     background-color: var(--bg-color);
 }
 
+.greetings p{
+    color: var(--white-smoke);
+}
+.greetings h1{
+    color: var(--tint-blue);
+    font-weight: 400;
+}
+
 .exp-sec{
-    height: 100%;
+    height: auto;
+    margin-top: 1rem;
     width: 90%;
     display: flex;
     justify-content: center;
     align-items: center;
     gap: 2rem;
+    background-color: antiquewhite;
 }
 
 .exp-sec .component{
@@ -60,6 +74,12 @@
     align-items: center;
     height: 2.5rem;
     width: auto;
+}
+
+.tech-skills{
+    height: 600px;
+    width: 90%;
+    background-color: aquamarine;
 }
 
 .icon-text {

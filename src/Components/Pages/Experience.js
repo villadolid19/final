@@ -19,6 +19,10 @@ import { FaDatabase } from "react-icons/fa6";
 const Experience = () => {
   return (
     <section className="Experience" id="Experience">
+      <div className="greetings">
+        <p className="">Explore My</p>
+        <h1 className="">Experience</h1>
+      </div>
 
       <div className="exp-sec">
         <div className="component">
@@ -114,7 +118,9 @@ const Experience = () => {
         </div>
       </div>
 
-      <div className="tech-skills"></div>
+      <div className="tech-skills">
+        <h1>Technical Skills</h1>
+      </div>
     </section>
   );
 }
