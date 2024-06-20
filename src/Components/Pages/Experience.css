@@ -23,11 +23,12 @@
     display: flex;
     justify-content: flex-start;
     align-items: center;
-    padding-top: 6rem;
+    padding-top: 1rem;
     gap: 1rem;
     width: 100%;
     height: auto;
     background-color: var(--bg-color);
+    margin-bottom: -20rem;
 }
 
 .greetings{
@@ -163,6 +164,9 @@
 /* BREAK POINTS */
 
 @media(max-width: 1000px){
+    .Experience{
+        margin-bottom: -6rem;
+    }
     .exp-sec, .tech-skills .skills{
         flex-direction: column;
     }

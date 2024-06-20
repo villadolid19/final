@@ -50,7 +50,9 @@ const Profile = () => {
 
   return (
     <section className="Profile" id="Profile">
+
       <div className="components">
+        
         <div className="img-sec">
           <img src={Pic1} className="pic" alt="Denzel Villadolid" />
           <div className="circle"></div>
