@@ -19,7 +19,6 @@
 .Projects {
     top: 0;
     left: 0;
-    padding-top: 1rem;
     display: flex;
     flex-direction: column;
     justify-content: flex-start;
@@ -51,12 +50,21 @@
     margin-top: 1rem;
 }
 
+
 .proj-sec .proj-div{
+    display: flex;
+    justify-content: center;
+    align-items: center;
     height: 250px;
     width: 300px;
     border-radius: 30px;
     border: 2px solid;
     border-color: var(--tint-blue);
     background-color: var(--dark-blue);
+}
 
+.proj-sec .proj-div h2{
+    font-size: 1.5rem;
+    font-weight: 400;
+    color: rgb(186, 186, 186);
 }

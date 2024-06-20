@@ -23,7 +23,6 @@
     display: flex;
     justify-content: flex-start;
     align-items: center;
-    padding-top: 1rem;
     gap: 1rem;
     width: 100%;
     height: auto;
@@ -68,6 +67,8 @@
 }
 .component h1{
     font-size: 1rem;
+    color: var(--tint-blue);
+    font-weight: 500;
 }
 
 .component .icon-text{
@@ -154,6 +155,7 @@
     font-size: 1.2rem;
     font-weight: 500;
     margin-bottom: 1rem;
+    color: var(--tint-blue);
 }
 
 .skills .div-sec ul li{

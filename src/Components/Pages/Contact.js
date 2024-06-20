@@ -5,6 +5,15 @@ import { IoIosMail } from "react-icons/io";
 import { FaGithub } from "react-icons/fa6";
 
 const Contact = () => {
+
+  const openGit = () => {
+    window.open("https://github.com/", "_blank");
+  };
+
+  const openMail = () => {
+    window.open("mailto:denzelvilladolid1999@gmail.com", "_blank");
+  };
+
   return (
     <section className="Contact" id="Contact">
       <div className="greetings">
@@ -14,12 +23,12 @@ const Contact = () => {
 
       <div className="con">
         <div className="mail">
-          <IoIosMail />
-          <a href="mailto:denzelvilladolid1999@gmail.com">MyMail@gmail.com</a>
+          <IoIosMail onClick={openMail} className="icon" />
+          <p onClick={openMail}>MyMail@gmail.com</p>
         </div>
         <div className="gh">
-          <FaGithub />
-          <p>GitHub</p>
+          <FaGithub onClick={openGit} className="icon" />
+          <p onClick={openGit}>GitHub</p>
         </div>
       </div>
     </section>
