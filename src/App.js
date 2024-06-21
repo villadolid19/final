@@ -15,6 +15,7 @@ import About from "./Components/Pages/About";
 import Experience from "./Components/Pages/Experience";
 import Projects from "./Components/Pages/Projects";
 import Contact from "./Components/Pages/Contact";
+import Bisu from "./Components/Pages/Bisu";
 import Footer from "./Components/Footer";
 
 import ScrollReveal from "scrollreveal";
@@ -49,6 +50,7 @@ function App() {
             <Route path="/Experience" element={<Experience />} />
             <Route path="/Projects" element={<Projects />} />
             <Route path="/Contact" element={<Contact />} />
+            <Route path="/Bisu" element={<Bisu />} />
           </Routes>
         </div>
 
