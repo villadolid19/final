@@ -1,6 +1,16 @@
 import React from 'react';
 import './Bisu.css';
 
+// Import Swiper React components
+import { Swiper, SwiperSlide } from "swiper/react";
+// import required modules
+import { EffectCoverflow } from "swiper/modules";
+import { Autoplay, Pagination, Navigation } from "swiper/modules";
+// Import Swiper styles
+import "swiper/css";
+import "swiper/css/effect-coverflow";
+import "swiper/css/pagination";
+
 import Login from "../Assets/Log-in.jpg";
 import Dash from "../Assets/Dashboard.jpg";
 import Anal from "../Assets/Analytics.jpg";
@@ -15,7 +25,47 @@ const Bisu = () => {
       </div>
 
       <div className="carousel">
-        <h3>Carousel Area</h3>
+        <Swiper
+          effect={"coverflow"}
+          loop={true}
+          grabCursor={true}
+          centeredSlides={true}
+          slidesPerView={"auto"}
+          coverflowEffect={{
+            rotate: 50,
+            stretch: 0,
+            depth: 100,
+            modifier: 1,
+            slideShadows: false,
+          }}
+          navigation={true}
+          pagination={{
+            type: "progressbar",
+          }}
+          autoplay={{
+            delay: 2500,
+            disableOnInteraction: false,
+          }}
+          modules={[Autoplay, EffectCoverflow, Pagination, Navigation]}
+          className="swiper-sec"
+        >
+          {data.map((grab, idx) => (
+            <SwiperSlide className="swiperSlide-sec">
+
+              <div key={idx.name} className="img-sec">
+                <img
+                  src={grab.img}
+                  alt=""
+                  className=""
+                />
+              </div>
+
+              <div className="name-sec">
+                <h1 className="">{grab.name}</h1>
+              </div>
+            </SwiperSlide>
+          ))}
+        </Swiper>
       </div>
 
       <div className="info-area">
@@ -55,7 +105,6 @@ const Bisu = () => {
             </li>
           </ul>
         </div>
-        
       </div>
     </section>
   );
