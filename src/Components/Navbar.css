@@ -3,11 +3,11 @@
 
 :root {
     --black: black;
-    --white: white;
+    --white: rgb(200, 200, 200);
     --dark-blue: #282a3c;
     --bg-color: #171b22;
     --tint-blue: #61dafb;
-    --white-smoke: whitesmoke;
+    --white-smoke: rgb(200, 200, 200);
     --transparent: rgba(0, 0, 0, .1);
 }
 

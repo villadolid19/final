@@ -3,11 +3,11 @@
 
 :root{
     --black: black;
-    --white: white;
+    --white: rgb(200, 200, 200);
     --dark-blue: #282a3c;
     --bg-color: #171b22;
     --tint-blue: #61dafb;
-    --white-smoke: whitesmoke;
+    --white-smoke: rgb(200, 200, 200);
 }
 *{
     margin: 0;
@@ -23,7 +23,7 @@
     align-items: center;
     gap: 2rem;
     width: 100%;
-    height: 100vh;
+    height: 120vh;
     background-color: var(--bg-color);
 }
 
@@ -153,12 +153,21 @@
     opacity: .8;
 }
 
+.form-con form button:disabled{
+    cursor: not-allowed;
+    background-color: #cccccc;
+}
+.form-con form button:disabled:hover{
+    transform: scale(1);
+    background-color: #cccccc;
+}
+
 .loading-spinner {
     border: 4px solid rgba(0, 0, 0, 0.1);
     border-left-color: var(--tint-blue);
     border-radius: 50%;
-    width: 24px;
-    height: 24px;
+    width: 30px;
+    height: 30px;
     animation: spin 1s linear infinite;
     margin: 0 auto;
     margin-top: 20px;
@@ -212,9 +221,7 @@
     .form-con form input, .form-con form textarea{
         width: 80%;
     }
-    .Contact{
-        height: 100vh;
-    }
+    
     .form-con form button{
         height: 2rem;
         font-size: .8rem;
@@ -232,7 +239,7 @@
     }
     .form-con form textarea{
         width: 70%;
-        height: 5rem;
+        height: 7rem;
     }
 }
 

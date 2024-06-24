@@ -3,11 +3,11 @@
 
 :root{
     --black: black;
-    --white: white;
+    --white: rgb(200, 200, 200);
     --dark-blue: #282a3c;
     --bg-color: #171b22;
     --tint-blue: #61dafb;
-    --white-smoke: whitesmoke;
+    --white-smoke: rgb(200, 200, 200);
 }
 *{
     margin: 0;
@@ -184,42 +184,35 @@
 
     .icon-text .icon .html{
         font-size: 1rem;
-        color: red;
     }
 
     .icon-text .icon .css{
         font-size: 1rem;
-        color: var(--tint-blue);
     }
     .icon-text .icon .tcss{
         font-size: 1rem;
-        color: var(--tint-blue);
     }
     .icon-text .icon .js{
         font-size: 1rem;
-        color: yellow;
     }
 
     .icon-text .icon .react{
         font-size: 1rem;
-        color:blue;
     }
     .icon-text .icon .php{
         font-size: 1rem;
-        color: violet;
     }
     .icon-text .icon .sql{
         font-size: 1rem;
-        color: var(--tint-blue);
     }
     .icon-text .icon .db{
         font-size: 1rem;
-        color: var(--tint-blue);
     }
     .icon-text .text{
         margin-top: .3rem;
-        font-size: 14px;
-        color: var(--white-smoke);
+    }
+    .skills .div-sec h1{
+        font-size: 1rem;
     }
 }
 

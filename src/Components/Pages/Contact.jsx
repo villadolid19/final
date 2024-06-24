@@ -1,27 +1,16 @@
 import React, { useState } from "react";
 import "./Contact.css";
 import Swal from "sweetalert2";
-
-// import { IoIosMail } from "react-icons/io";
-// import { FaGithub } from "react-icons/fa6";
+// import ReCAPTCHA from "react-google-recaptcha";
 import { FaArrowRight } from "react-icons/fa";
 
-
 const Contact = () => {
-
-  // const openGit = () => {
-  //   window.open("https://github.com/", "_blank");
-  // };
-
-  // const openMail = () => {
-  //   window.open("mailto:denzelvilladolid1999@gmail.com", "_blank");
-  // };
-
-  const [loading, setLoading] = useState(false); // State to manage loading state
+  const [loading, setLoading] = useState(false);
+  // const [cap, setCap] = useState(false);
 
   const onSubmit = async (event) => {
     event.preventDefault();
-    setLoading(true); // Show loading animation
+    setLoading(true);
 
     const formData = new FormData(event.target);
     formData.append("access_key", "7907e977-c4f6-4d12-822f-a4f46aa2e576");
@@ -29,30 +18,41 @@ const Contact = () => {
     const object = Object.fromEntries(formData);
     const json = JSON.stringify(object);
 
-    const res = await fetch("https://api.web3forms.com/submit", {
-      method: "POST",
-      headers: {
-        "Content-Type": "application/json",
-        Accept: "application/json",
-      },
-      body: json,
-    }).then((res) => res.json());
-
-    setLoading(false); // Hide loading animation
-
-    if (res.success) {
-      Swal.fire({
-        icon: "success",
-        title: "Success!",
-        text: "Your message has been sent successfully.",
+    try {
+      const response = await fetch("https://api.web3forms.com/submit", {
+        method: "POST",
+        headers: {
+          "Content-Type": "application/json",
+          Accept: "application/json",
+        },
+        body: json,
       });
-      event.target.reset();
-    } else {
+      const res = await response.json();
+
+      setLoading(false);
+
+      if (res.success) {
+        Swal.fire({
+          icon: "success",
+          title: "Success!",
+          text: "Your message has been sent successfully.",
+        });
+        event.target.reset();
+      } else {
+        Swal.fire({
+          icon: "error",
+          title: "Oops...",
+          text: res.message || "Something went wrong! Please try again later.",
+        });
+      }
+    } catch (error) {
+      setLoading(false);
       Swal.fire({
         icon: "error",
         title: "Oops...",
         text: "Something went wrong! Please try again later.",
       });
+      console.error("Error:", error);
     }
   };
 
@@ -62,17 +62,6 @@ const Contact = () => {
         <p className="">Get in Touch</p>
         <h1 className="">Contact Me</h1>
       </div>
-
-      {/* <div className="con">
-        <div className="mail">
-          <IoIosMail onClick={openMail} className="icon" />
-          <p onClick={openMail}>MyMail@gmail.com</p>
-        </div>
-        <div className="gh">
-          <FaGithub onClick={openGit} className="icon" />
-          <p onClick={openGit}>GitHub</p>
-        </div>
-      </div> */}
 
       <div className="form-con">
         {loading && <div className="loading-spinner"></div>}
@@ -111,8 +100,11 @@ const Contact = () => {
             autoComplete="off"
             required
           ></textarea>
-
-          <button type="submit" disabled={loading}>
+          {/* <ReCAPTCHA
+            sitekey="6Lf_WgAqAAAAAP57tH2yYuipLDYSb9cTrBbZl_bR"
+            onChange={(value) => setCap(value)}
+          /> */}
+          <button type="submit" value="submit" disabled={ loading}>
             {loading ? (
               "Submitting..."
             ) : (
