@@ -34,7 +34,7 @@ const Profile = () => {
   
   React.useEffect(() => {
     const typed = new Type(el.current, {
-      strings: ["A Front-end Developer"],
+      strings: ["A Front-end Web Developer"],
       typeSpeed: 100,
       backSpeed: 100,
       backDelay: 1000,
