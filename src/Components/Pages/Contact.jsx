@@ -1,10 +1,22 @@
 import React, { useState } from "react";
 import "./Contact.css";
 import Swal from "sweetalert2";
+
+// import { IoIosMail } from "react-icons/io";
+// import { FaGithub } from "react-icons/fa6";
 import { FaArrowRight } from "react-icons/fa";
 
 
 const Contact = () => {
+
+  // const openGit = () => {
+  //   window.open("https://github.com/", "_blank");
+  // };
+
+  // const openMail = () => {
+  //   window.open("mailto:denzelvilladolid1999@gmail.com", "_blank");
+  // };
+
   const [loading, setLoading] = useState(false); // State to manage loading state
 
   const onSubmit = async (event) => {
@@ -50,6 +62,17 @@ const Contact = () => {
         <p className="">Get in Touch</p>
         <h1 className="">Contact Me</h1>
       </div>
+
+      {/* <div className="con">
+        <div className="mail">
+          <IoIosMail onClick={openMail} className="icon" />
+          <p onClick={openMail}>MyMail@gmail.com</p>
+        </div>
+        <div className="gh">
+          <FaGithub onClick={openGit} className="icon" />
+          <p onClick={openGit}>GitHub</p>
+        </div>
+      </div> */}
 
       <div className="form-con">
         {loading && <div className="loading-spinner"></div>}

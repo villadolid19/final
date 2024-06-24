@@ -177,12 +177,6 @@
 
 /* BREAK POINTS */
 
-@media(max-width: 1000px){
-    /* .con{
-        margin-top: 20rem;
-    } */
-}
-
 @media(max-width: 500px){
     .con{
         width: 320px;
@@ -219,7 +213,12 @@
         width: 80%;
     }
     .Contact{
-        height: 90vh;
+        height: 100vh;
+    }
+    .form-con form button{
+        height: 2rem;
+        font-size: .8rem;
+        width: 6rem;
     }
 }
 
@@ -227,7 +226,13 @@
     .form-con form{
         width: 300px;
     }
-    .form-con form input, .form-con form textarea{
-        width: 80%;
+    .form-con form input{
+        width: 70%;
+        height: 2.5rem;
+    }
+    .form-con form textarea{
+        width: 70%;
+        height: 5rem;
     }
 }
+
