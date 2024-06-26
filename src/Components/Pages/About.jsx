@@ -1,7 +1,7 @@
 import React from 'react';
 import './About.css';
 
-import Pic1 from "../Assets/Don.jpg";
+import Pic1 from "../Assets/Don-2.jpg";
 import { GiAchievement } from "react-icons/gi";
 import { FaGraduationCap } from "react-icons/fa";
 

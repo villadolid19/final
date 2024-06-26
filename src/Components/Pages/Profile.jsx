@@ -1,7 +1,7 @@
-import React, {useRef} from 'react';
+import React from 'react';
 import './Profile.css';
 
-import Pic1 from "../Assets/Don1.jpg";
+import Pic1 from "../Assets/Don-1.jpg";
 import { FaGithub } from "react-icons/fa6";
 import Resume from "../Assets/Villadolid-Resume CV.pdf";
 import ScrollReveal from "scrollreveal";

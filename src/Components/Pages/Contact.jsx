@@ -1,23 +1,26 @@
 import React, { useState } from "react";
 import "./Contact.css";
 import Swal from "sweetalert2";
-// import ReCAPTCHA from "react-google-recaptcha";
 import { FaArrowRight } from "react-icons/fa";
+// import ReCAPTCHA from "react-google-recaptcha";
+
 
 const Contact = () => {
   const [loading, setLoading] = useState(false);
+  const [honeypot, setHoneypot] = useState(""); // Add honeypot state
   // const [cap, setCap] = useState(false);
 
   const onSubmit = async (event) => {
     event.preventDefault();
+    if (honeypot) {
+      // If honeypot is filled, do nothing
+      return;
+    }
     setLoading(true);
-
     const formData = new FormData(event.target);
     formData.append("access_key", "7907e977-c4f6-4d12-822f-a4f46aa2e576");
-
     const object = Object.fromEntries(formData);
     const json = JSON.stringify(object);
-
     try {
       const response = await fetch("https://api.web3forms.com/submit", {
         method: "POST",
@@ -100,11 +103,20 @@ const Contact = () => {
             autoComplete="off"
             required
           ></textarea>
+          <input
+            type="text"
+            name="honeypot"
+            style={{ display: "none" }}
+            value={honeypot}
+            onChange={(e) => setHoneypot(e.target.value)}
+          />
+
           {/* <ReCAPTCHA
             sitekey="6Lf_WgAqAAAAAP57tH2yYuipLDYSb9cTrBbZl_bR"
             onChange={(value) => setCap(value)}
           /> */}
-          <button type="submit" value="submit" disabled={ loading}>
+
+          <button type="submit" value="submit" disabled={loading}>
             {loading ? (
               "Submitting..."
             ) : (
@@ -123,3 +135,7 @@ const Contact = () => {
 };
 
 export default Contact;
+
+
+
+

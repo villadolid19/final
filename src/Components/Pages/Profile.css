@@ -65,7 +65,8 @@
     width: 450px;
     border-radius: 50%;
     box-shadow: 0 6px 10px var(--tint-blue);
-    background-color: var(--tint-blue);
+    /* background: url('/src/Components/Assets/Don1.jpg');
+    background-size: 300%; */
     animation: floatImage 4s ease-in-out infinite;
 }
 
