@@ -23,10 +23,11 @@
     align-items: center;
     gap: 2rem;
     width: 100%;
-    height: auto;
+    height: 100vh;
     background-color: var(--bg-color);
     margin-bottom: 2rem;
-    bottom: 0;
+    top: 0;
+    left: 0;
     overflow-y: auto;
 }
 
@@ -164,9 +165,13 @@
 
 /* BREAK POINTS */
 @media(max-width: 600px){
-    /* .content{
+    .Contact{
+        /* height: auto; */
+        overflow-y: auto;
+    }
+    .content{
         height: 110vh;
-    } */
+    }
     .form-con form{
         width: 500px;
     }
