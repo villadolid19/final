@@ -223,7 +223,7 @@
 
 @media(max-width: 400px){
     .Contact{
-        margin-bottom: 3rem;
+        overflow-y: auto;
     }
     .form-con form{
         width: 300px;

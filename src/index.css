@@ -32,6 +32,7 @@ body{
     width: 100%;
     background-color: var(--bg-color);
     overflow: hidden;
+    overflow-y: auto;
 }
 .navbar{
     position: absolute;
@@ -46,6 +47,7 @@ body{
     left: 0;
     height: 100%;
     width: 100%;
+    z-index: 2;
     /* margin-bottom: 20%; */
     /* margin-top: 3.45rem; */
 }
