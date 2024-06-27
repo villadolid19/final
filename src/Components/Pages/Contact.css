@@ -164,9 +164,9 @@
 
 /* BREAK POINTS */
 @media(max-width: 600px){
-    .content{
+    /* .content{
         height: 110vh;
-    }
+    } */
     .form-con form{
         width: 500px;
     }
@@ -179,9 +179,9 @@
 }
 
 @media(max-width: 500px){
-    .content{
+    /* .content{
         margin-bottom: 3rem;
-    }
+    } */
     .con{
         width: 320px;
     }
