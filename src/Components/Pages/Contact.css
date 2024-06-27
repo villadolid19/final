@@ -32,7 +32,9 @@
 }
 
 .greetings{
+    /* position: absolute; */
     margin-top: 4.5rem;
+    margin-bottom: 4rem;
 }
 .greetings p{
     color: var(--white-smoke);
@@ -166,11 +168,11 @@
 /* BREAK POINTS */
 @media(max-width: 600px){
     .Contact{
-        /* height: auto; */
+        /* height: 90vh; */
         overflow-y: auto;
     }
     .content{
-        height: 110vh;
+        height: 90%;
     }
     .form-con form{
         width: 500px;
