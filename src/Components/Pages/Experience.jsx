@@ -135,7 +135,6 @@ const Experience = () => {
             <ul>
               <li>Word</li>
               <li>PowerPoint</li>
-              <li>Excel</li>
             </ul>
           </div>
           
