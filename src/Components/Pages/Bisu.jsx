@@ -88,8 +88,7 @@ const Bisu = () => {
             <li>
               <span>Platform Development: </span>
               Designing, developing, and maintaining the overall platform,
-              ensuring a smooth and user-friendly experience for both desktop
-              and mobile users.
+              ensuring a smooth and user-friendly experience for desktop users.
             </li>
 
             <li>
